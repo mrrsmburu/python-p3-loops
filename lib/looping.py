@@ -1,29 +1,26 @@
 #!/usr/bin/env python3
 
 def happy_new_year():
-    countdown = 10
-    while countdown >= 1:
-        print(countdown)
-        countdown -= 1
-
+    counter = 10
+    while counter >= 1:
+        print(counter)
+        counter -= 1
+        
     print("Happy New Year!")
-    pass
 
-def square_integers(int_list):
-    squared_list = [x ** 2 for x in int_list]
-    return squared_list
-
-    pass
-
-def fizzbuzz():
+def square_integers(numbers):
+    numbers=[1,2,3,4,5]
+    numbers=[num*num for num in numbers]
+    return numbers
     
-    for num in range(1, 101):
-        if num % 3 == 0 and num % 5 == 0:
+def fizzbuzz():
+    for i in range(1,101):
+        if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz")
-        elif num % 3 == 0:
+        elif i % 3 == 0:
             print("Fizz")
-        elif num % 5 == 0:
+        elif i % 5 == 0:
             print("Buzz")
         else:
-            print(num)
-    pass
+            print(i)
+        
